@@ -1,0 +1,76 @@
+<%= form_for(@perfume, class: 'form-horizontal', role: 'form') do |f| %>
+            <div class="container-sindan">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Question1. 目の大きさは?</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "1", nil %>小さめ</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "2", nil %>大きめ</p>
+                    </div>
+
+                    <div class="col-12">
+                        <p>Question2. 目と目の間隔は?</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "1", nil %>広め</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "2", nil %>狭め</p>
+                    </div>
+
+                   
+
+                     <div class="col-12">
+                        <p>Question3. 「おでこ」と「鼻の下～顎先まで」どちらの方が長い?</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "1", nil %>おでこ</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "2", nil %>鼻の下～顎先まで</p>
+                    </div>
+
+                    
+                    <div class="col-12">
+                        <p>Question4. 輪郭に丸みがある</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "1", nil %>はい</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "2", nil %>いいえ</p>
+                    </div>
+
+                    <div class="col-12">
+                        <p>Question5. 頬に丸みがある</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "1", nil %>はい</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "2", nil %>いいえ</p>
+                    </div>
+
+                    <div class="col-12">
+                        <p>Question6. 目の形は?</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "1", nil %>丸みがある</p>
+                    </div>
+                    <div class="col-6">
+                        <p><%= f.check_box :question, {multiple: true}, "2", nil %>切れ長</p>
+                    </div>
+
+                    
+                
+
+                    
+                </div>
+            </div>
+            <div class="sindanbotan">
+                <%= f.submit "post" %>
+            </div>
+<% end %>
